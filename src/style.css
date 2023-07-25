@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+
+    width: 100%;
+    background-color: #075985;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(39, 57, 71, 0.3);
+    justify-content: space-between;
+    
+}
+
+.header h1{
+    color:white;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    
+}
+
+.mainPage{
+    display: flex;
+
+}
+
+.sideBar{
+    background-color: #f0f9ff;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 90vh;
+    box-shadow: 5px 5px 10px rgba(39, 57, 71, 0.3);
+    
+
+
+}
+.sideBar h3{
+    font-size: 25px;
+    margin:  1vh ;
+    padding: 2vh;
+    
+}
+.sideBar h3:hover{
+    background-color: #075985;
+    background-size: cover;
+    color: white;
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 5px;
+    
+}
+/* style for +add task button */
+.taskPlus{
+    position: fixed;
+    top: 10%;
+    left: 80%;
+    
+    padding: 2vh;
+    border-radius: 5px;
+    
+    
+}
+.taskPlus:hover{
+    background-color: #075985;
+    color: white;
+    cursor: pointer;
+}
+
+  
+  /* Media query for screens with a maximum width of 768px (e.g., mobile devices) */
+  @media screen and (max-width: 800px) {
+    .taskPlus {
+      top:7%;
+      left: 70%;
+    }
+    h1 {
+        font-size: 18px; /* Decrease font size for mobile devices */
+    }
+  }
+
+
+
+/* Styling for the New task form */
+.taskFormDisplay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-height: 80vh;
+    padding: 2vh 5vh;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 5vh 5vh 5vh;
+    display: none;
+  }
+ 
+ .taskFormDisplay .newTask{
+
+    color:#082f49 ;
+    margin-bottom: 5vh;
+ }
+  
+  
+ 
+  
+  /* Styling for text inputs and textarea */
+  input[type="text"],
+  textarea,
+  input[type="date"],
+  select {
+    padding: 1vh ;
+    border: 1px solid ;
+    border-radius: 3px;
+    margin-bottom: 4vh;
+    background-color: #fff;
+    width: 97%;
+    
+  }
+  .taskDesc{
+    height: 6vh;
+  }
+  
+  /* Styling for the checklist textarea */
+  textarea.checklist {
+    resize: vertical;
+  }
+  
+  /* Styling for buttons */
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .addtaskBtn{
+    background-color: #075985;
+    color: #fff;
+    margin-left: 1vw;
+  }
+  .cancel{
+    background-color: #f75539;
+    color: #fff;
+  }
+  /* Styling for the button container */
+  .buttonContainer {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    
+  }
+  
+  /* Styling for the Due Date and Priority fields container */
+  .fieldContainer {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  
